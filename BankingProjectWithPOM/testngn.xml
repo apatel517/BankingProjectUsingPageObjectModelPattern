@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="tests" thread-count="3">
+  <test name="Testonchrome">
+	  <parameter name="browserName" value="chrome"></parameter>
+    <classes>
+      <class name="TestMethods.TestScripts"/>
+      <methods>
+		  <include name="login"/>
+		  <exclude name="customeRegistration"/>
+		  <exclude name ="EditCustomer"/>
+		  <exclude name ="NewAccount"/>
+		  <exclude name ="Depositp"/>
+		  <exclude name ="withdrwalp"/>
+		  <exclude name ="TransferFund"/>
+		  <exclude name="BalanceEnquiry"/>
+		  <exclude name="ChangePassword"/>
+		  <exclude name="DeleteCustomer"/>
+	  </methods>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Testonfirefox">
+	  <parameter name="browserName" value="firefox"></parameter>
+    <classes>
+      <class name="TestMethods.TestScripts"/>
+      <methods>
+		  <include name="login"/>
+		  <exclude name="customeRegistration"/>
+		  <exclude name ="EditCustomer"/>
+		  <exclude name ="NewAccount"/>
+		  <exclude name ="Depositp"/>
+		  <exclude name ="withdrwalp"/>
+		  <exclude name ="TransferFund"/>
+		  <exclude name="BalanceEnquiry"/>
+		  <exclude name="ChangePassword"/>
+		  <exclude name="DeleteCustomer"/>
+	  </methods>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Testonsafari">
+	  <parameter name="browserName" value="safari"></parameter>
+    <classes>
+      <class name="TestMethods.TestScripts"/>
+      <methods>
+		  <include name="login"/>
+		  <exclude name="customeRegistration"/>
+		  <exclude name ="EditCustomer"/>
+		  <exclude name ="NewAccount"/>
+		  <exclude name ="Depositp"/>
+		  <exclude name ="withdrwalp"/>
+		  <exclude name ="TransferFund"/>
+		  <exclude name="BalanceEnquiry"/>
+		  <exclude name="ChangePassword"/>
+		  <exclude name="DeleteCustomer"/>
+	  </methods>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
